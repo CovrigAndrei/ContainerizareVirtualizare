@@ -66,6 +66,7 @@ unde:
 sudo apt install -y apache2 php libapache2-mod-php php-mysql mariadb-server mariadb-client unzip
 ```
 unde:
+- `install` - specificăm faptul că dorim să instalăm un pachet.
 - `apache2` - instalăm serverul web Apache.
 - `php` - instalăm PHP, necesar pentru a rula aplicații web dinamice.
 - `libapache2-mod-php` - modul pentru Apache care permite interpretarea PHP.
@@ -149,7 +150,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 ### Descrierea instalării PhpMyAdmin
-__phpMyAdmin__ este o interfață web pentru gestionarea bazelor de date MySQL/MariaDB. Instalarea phpMyAdmin presupune mai mulți pași esențiali:
+__phpMyAdmin__ este o interfață web pentru gestionarea bazelor de date MySQL/MariaDB. Instalarea phpMyAdmin presupune următorii pași:
 1. Descărcarea ultimei versiuni de pe site-ul oficial:
 
 ```bash 
@@ -211,14 +212,15 @@ __Partiția /data__ este partiția unde sunt stocate datele utilizatorilor sau a
 
 Partiționarea discului aduce numeroase avantaje, cum ar fi o mai bună organizare a fișierelor, securitate sporită prin separarea fișierelor sistemului de operare, a aplicațiilor și a datelor utilizatorilor, întreținere mai ușoară a sistemului de operare și recuperare în caz de dezastru a datelor.
 
-## Concluzii.
+## Concluzii
 În cadrul lucrării de laborator, prin intermediul QEMU, am creat o mașină virtuală și am instalat sistemul de operare Debian, configurând ulterior un mediu de dezvoltare web bazat pe LAMP (Linux, Apache, MySQL/MariaDB, PHP).
 Un aspect important al lucrării a fost configurarea host-urilor virtuale în Apache, permițând rularea mai multor site-uri pe aceeași mașină. De asemenea, am instalat Drupal ca CMS și phpMyAdmin pentru administrarea bazelor de date.
 
-## Bibliografie.
+## Bibliografie
 1. [QEMU virtualization, calculate-linux.org, 2020-01-24](https://wiki.calculate-linux.org/qemu)
 2. [Welcome to QEMU’s documentation!, qemu.org](https://www.qemu.org/docs/master/)
 3. [virtual machine manager, virt-manager.org](https://virt-manager.org/)
-
-
+4. [How to Set Up Apache Virtual Hosts on Debian, linuxize.com](https://linuxize.com/post/how-to-set-up-apache-virtual-hosts-on-debian-10/)
+5. [How to Install Drupal CMS with Apache on Debian 12, howtoforge.com ](https://www.howtoforge.com/how-to-install-drupal-on-debian-12/)
+6. [How to Install phpMyAdmin on Debian 12, phoenixnap.com](https://phoenixnap.com/kb/how-to-install-phpmyadmin-on-debian)
 
